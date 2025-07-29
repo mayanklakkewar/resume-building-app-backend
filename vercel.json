@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "buildCommand": "./vercel-build.sh",
   "builds": [
     {
       "src": "server.js",

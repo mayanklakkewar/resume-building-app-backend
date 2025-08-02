@@ -90,7 +90,7 @@ export const createResume = async function (req, res) {
 
 export const getUserResumes = async function (req, res) {
   try {
-    const resumes = await Resume.find({ userid: req.user.userId }).sort({
+    const resumes = await Resume.find({ userId: req.user._id }).sort({
       updatedAt: -1,
     });
     res.json(resumes);
